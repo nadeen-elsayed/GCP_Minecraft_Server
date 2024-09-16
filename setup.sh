@@ -30,15 +30,6 @@ gcloud compute instances network-interfaces update mc-server \
   --network-interface=nic0 \
   --addresses=[YOUR_RESERVED_IP]
 
-
-
-
-
-
-
-
-
-
 # Create a firewall rule to allow TCP traffic on port 25565 for the Minecraft server
 gcloud compute firewall-rules create minecraft-rule \
   --allow tcp:25565 \
